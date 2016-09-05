@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body {
+			font-size: 16px;
+		}
+		.my-btn {
+			padding: 6px 16px;
+			border: 1px solid #446d88;
+			background: #58a linear-gradient(#77a0bb, #58a);
+			border-radius: 4px;
+			box-shadow: 0 1px 5px gray;
+			color: white;
+			text-shadow: 0 -1px 1px #335166;
+			font-size: 20px;
+			line-height: 30px;
+		}
+		
+		/*随字体大小改变而改变行高*/
+		.my-btn2 {
+			padding: 6px 16px;
+			border: 1px solid #446d88;
+			background: #58a linear-gradient(#77a0bb, #58a);
+			border-radius: 4px;
+			box-shadow: 0 1px 5px gray;
+			color: white;
+			text-shadow: 0 -1px 1px #335166;
+			font-size: 20px;
+			line-height: 1.5;
+
+			/*更优方案 随父级字体改变字号*/
+			font-size: 125%; 
+			line-height: 1.5;
+
+
+		}
+
+		.my-btn3 {
+			padding: .3em .8em;
+			border: 1px solid #446d88;
+			background: #58a linear-gradient(#77a0bb, #58a);
+			border-radius: .2em;
+			box-shadow: 0 .05em .25em gray;
+			color: white;
+			text-shadow: 0 -.05em, .05em #335166;
+			font-size: 125%; 
+			line-height: 1.5;
+		}
+
+		.my-btn4 {
+			padding: .3em .8em;
+			border: 1px solid rgba(0, 0, 0, .1);
+			background: #58a linear-gradient(hsla(0,0%,100%,.2), transparent);
+			border-radius: .2em;
+			box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+			color: white;
+			text-shadow: 0 -.05em, .05em rgba(0, 0, 0, .5);
+			font-size: 125%; 
+			line-height: 1.5;
+		}
+
+		button.cancel {
+			background-color: #c00;
+		}
+
+		button.ok {
+			background-color: #6b0;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<h6>普通情况</h6>
+			<button class="my-btn">Button1</button>
+		</li>
+		<li>
+			<h6>字号百分比，行高倍数</h6>
+			<button class="my-btn2">Button2</button>
+		</li>
+		<li>
+			<h6>字号em，行高倍数</h6>
+			<button class="my-btn3">Button3</button>
+		</li>
+		<li>
+			<h6>hsla产生半透明白色 rgba透明色值</h6>
+			<button class="my-btn4 ok">Button4 ok</button>
+			<button class="my-btn4 cancel">Button4 ok</button>
+		</li>
+	</ul>
+	
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.flex-wrap {
+			display: flex;
+		}
+
+		.flex-item {
+			background: green;
+			flex-flow: row;
+		}
+
+		.flex-main {
+			/*width: 100px;*/
+			flex: 1;
+			height: 200px;
+			background: red;
+		}
+
+		.flex-left {
+			flex: 1;
+			height: 200px;
+			margin-right: 1px;
+		}
+
+		.flex-right {
+			flex: 2;
+			height: 200px;
+			margin-left: 1px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="flex-wrap">
+		<div class="flex-left flex-item"></div>
+		<div class="flex-main flex-item"></div>
+		<div class="flex-right flex-item"></div>
+	</div>	
+</body>
+</html>
